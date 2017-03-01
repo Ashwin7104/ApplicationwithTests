@@ -10,7 +10,7 @@ using FirstApplicationwithTests.Controllers;
 namespace FirstApplicationwithTests.Tests.Controllers
 {
     [TestClass]
-    public class HomeControllerTest
+    public class HomeControllerTest   
     {
         [TestMethod]
         public void Index()
@@ -35,7 +35,7 @@ namespace FirstApplicationwithTests.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.AreEqual("Your application description page1.", result.ViewBag.Message);
         }
 
         [TestMethod]
